@@ -38,14 +38,28 @@ body {
     background-color:blue;
 } */
 
-/* By default, allow text overflow on menu headers BUT THIS ISN'T WORKING RIGHT NOW */
+body{margin:30px 0;}
+
+/* Allow text overflow on menu headers. */
 .mm-title {
-    overflow: visible;
-    overflow-wrap: break-word;
-    white-space: nowrap;
+    white-space: pre-wrap !important; /* css-3 */    
+    white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+    white-space: -pre-wrap !important; /* Opera 4-6 */    
+    white-space: -o-pre-wrap !important; /* Opera 7 */    
+    word-wrap: break-word !important;
+    word-break: break-word !important;
 }
 
-body{margin:30px 0;}
+/* Makes bottom border of header dynamic to allow for wrapped titles. */
+.mm-header {
+    height: auto !important;
+    position: static !important;
+}
+
+/* Makes panel content fall below the (auto-sized) header. */
+.mm-panel.mm-opened.mm-current {
+    position:static !important;
+}
 
 #instructions {font: 16px 'AmericanTypewriter', Cambria, Georgia; color: #282625; margin: 0 auto; width: 600px; line-height: 30px;}
 .paper {
@@ -60,6 +74,13 @@ background: linear-gradient(top, #DFE8EC 0%, white 8%) 0 57px;
 -moz-background-size: 100% 30px;
 -ms-background-size: 100% 30px;
 background-size: 100% 30px;
+/*Wrap content.*/
+white-space: pre-wrap; /* css-3 */    
+white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+white-space: -pre-wrap; /* Opera 4-6 */    
+white-space: -o-pre-wrap; /* Opera 7 */    
+word-wrap: break-word;
+
 }
-.paper::before {content:""; z-index:-1; margin:0 1px; width:706px; height:10px; position:absolute; bottom:-3px; left:0; background:white; border:1px solid #B5B5B5;}
+.paper::before {z-index:-1; margin:0 1px; width:706px; height:10px; position:absolute; bottom:-3px; left:0; background:white; border:1px solid #B5B5B5;}
 .paper::after {content:''; position:absolute; width:0px; top:0; left:39px; bottom:0; border-left:1px solid #F8D3D3;}
