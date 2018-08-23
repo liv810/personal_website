@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  <link rel="stylesheet" href="css/main.css">
+	  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/lato" type="text/css"/>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.0.4/css/jquery.mmenu.all.css">
+	  <script src="js/displaycard.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.0.4/js/jquery.mmenu.min.all.js"></script>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.0.4/css/extensions/jquery.mmenu.widescreen.css"  media="all and (min-width: 900px)" />
+	  <script>
+         jQuery(document).ready(function( $ ) {
+		    $("#sidebar").mmenu({
+		        "extensions": ["widescreen"]
+		    });
+
+		    
+		    $("#1").mmenu({
+		        "offCanvas": {
+		            "zposition": "front",
+		            "position": "right"
+		        },
+		        "header": {
+	            	"title": "Higher percentage of life-changing experiences.",
+    	            "add": true,
+        	        "update": true},
+		    });
+		    
+		    $("#2").mmenu({
+		        "offCanvas": {
+		            "zposition": "front",
+		            "position": "right"
+		        },
+		        "header": {
+	            	"title": "Better use of space (buildings are only used half the time).",
+    	            "add": true,
+        	        "update": true},
+		    });
+		    
+	  	});
+		</script>
+	</head>
+
+	<body>
+
+		<!-- Generate (permanent) sidebar. -->
+		<nav id="sidebar">
+			<ul>
+			  <li><a href="/">About me</a></li>
+			  <li><a href="#Ideas">Ideas that I'd love to work on</a></li>
+			  <li><a href="#Philosophies">Philosophizing</a></li>
+			  <li><a href="#Thoughts">Thoughts under construction</a></li>
+			</ul>
+		</nav>
+
+		<!-- Generate main links. -->
+		<div class="main">
+			<div>
+				
+				<div id="rounded-rectangle">Higher percentage of life-changing experiences.
+					<a href="#1">
+						<span class="link-spanner"></span>
+					</a>
+				</div>
+				
+				<div id="rounded-rectangle">Better use of space (buildings are only used half the time).
+					<a href="#2">
+						<span class="link-spanner"></span>
+					</a>
+				</div>
+				
+ 			</div>
+		</div>
+
+		<!-- Generate displaycard. -->
+		
+		<nav id="1">
+			<div>
+		  		<div class = "paper">We should do more that will change our perspective. Blah blah blah.</div>
+		    </div>
+		</nav>
+		
+		<nav id="2">
+			<div>
+		  		<div class = "paper">Convert spaces into hybrid office-homes <img src="https://dumielauxepices.net/sites/default/files/michael-jackson-clipart-circle-682046-2157161.jpg" height=40px> </img></div>
+		    </div>
+		</nav>
+		
+
+	</body>
+
+</html>
