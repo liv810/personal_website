@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style>
-  body { 
-    background-image:url("images/front-page-draft4.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center; 
-    background-size: 75% 75%;
-	}
-  </style>
   <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebusneuebold" type="text/css"/>
+  <!-- Add jQuery library -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+  <!-- Add maphilight plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.0/jquery.maphilight.min.js"></script>
+  <!-- Activate maphilight plugin -->
+  <script type="text/javascript">$(function() {
+          $('.map').maphilight();
+          // Necessary for vertical and horizontal centering.
+          $('.map').maphilight().parent().addClass('center-map');
+          $(".map").css({ position: "absolute" });
+      });
+  </script>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
-<body>
-</body>
+<map name="image-map">
+    <area target="_self" href="ideas.html" coords="827,593,847,709,915,729,1061,624,1000,609,969,507" shape="poly" data-maphilight='{"fillColor":"0073e6","stroke":false,"fillOpacity":0.7}'>
+</map>
+
+<div>
+	<img src="images/front-page-draft4.png" class="map" usemap="#image-map">
+</div>
+
 
 </html>
