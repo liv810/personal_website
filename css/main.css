@@ -18,4 +18,6 @@ div {
     right:0;
     bottom:0;
     margin:auto;
+    height:fit-content;
+    width:fit-content;
 }

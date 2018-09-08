@@ -10,9 +10,6 @@
   <script type="text/javascript">
     $(function() {
           $('.map').maphilight();
-          // Necessary for vertical and horizontal centering.
-          $('.map').maphilight().parent().addClass('center-map');
-          $(".map").css({ position: "absolute" });
       });
   </script>
   <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -22,9 +19,8 @@
     <area target="_self" href="ideas.html" coords="827,593,847,709,915,729,1061,624,1000,609,969,507" shape="poly" data-maphilight='{"fillColor":"0073e6","stroke":false,"fillOpacity":0.7}'>
 </map>
 
-<div>
+<div class='center-map'>
 	<img src="images/front-page-draft4.png" class="map" usemap="#image-map">
 </div>
-
 
 </html>
