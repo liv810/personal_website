@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  <link rel="stylesheet" href="css/wunderlist_main.css">
+	  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/lato" type="text/css"/>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.0.4/css/jquery.mmenu.all.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.0.4/js/jquery.mmenu.min.all.js"></script>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.0.4/css/extensions/jquery.mmenu.widescreen.css"  media="all and (min-width: 900px)" />
+	  <script>
+	  	// Prepare sidebar.
+         jQuery(document).ready(function( $ ) {
+		    $("#sidebar").mmenu({
+		        "extensions": ["widescreen"]
+		    });
+
+        // Prepare displaycards, for the active tab.
+		   
+			  
+			   $("#11").mmenu({
+			       "offCanvas": {
+			           "zposition": "front",
+			           "position": "right"
+			       },
+			       "header": {
+		           	"title": "Higher percentage of life-changing experiences.",
+			        "add": true,
+		            "update": true},
+			   });
+		      
+			   $("#12").mmenu({
+			       "offCanvas": {
+			           "zposition": "front",
+			           "position": "right"
+			       },
+			       "header": {
+		           	"title": "Better use of space (buildings are only used half the time).",
+			        "add": true,
+		            "update": true},
+			   });
+		     
+		  
+			  
+			   $("#21").mmenu({
+			       "offCanvas": {
+			           "zposition": "front",
+			           "position": "right"
+			       },
+			       "header": {
+		           	"title": "PhilosophyTitle",
+			        "add": true,
+		            "update": true},
+			   });
+		     
+		  
+			  
+			   $("#31").mmenu({
+			       "offCanvas": {
+			           "zposition": "front",
+			           "position": "right"
+			       },
+			       "header": {
+		           	"title": "ThoughtTitle",
+			        "add": true,
+		            "update": true},
+			   });
+		     
+		  
+
+		// Dynamically insert HTML into main div
+		$("#load_home").on("click", function() {
+        	$("#content").load("aboutme.html");
+    	});
+
+	  	});
+		</script>
+	</head>
+
+	<body>
+
+		<!-- Generate (permanent) sidebar. -->
+		<nav id="sidebar">
+			<ul>
+			  
+			    <li><a href="ideas.html">Ideas that I'd love to work on</a></li>
+			  
+			    <li><a href="philosophies.html">Philosophies</a></li>
+			  
+			    <li><a href="underconstruction.html">Thoughts under construction</a></li>
+			  
+			</ul>
+		</nav>
+
+		<!-- Generate main links. -->
+		<div class="main">
+
+			<!-- Dynamically generated content. -->
+		 	<div id="topBar">
+		    	<a href ="#" id="load_home"> HOME </a>
+			</div>
+			<div id ="content">        
+			</div>
+
+		</div>
+
+		<!-- Generate displaycard. -->
+		
+		
+		<nav id="11">
+			<div>
+		  		<div class = "paper">We should do more that will change our perspective. Blah blah blah.</div>
+		    </div>
+		</nav>
+		
+		<nav id="12">
+			<div>
+		  		<div class = "paper">Convert spaces into hybrid office-homes <img src="https://dumielauxepices.net/sites/default/files/michael-jackson-clipart-circle-682046-2157161.jpg" height=40px> </img></div>
+		    </div>
+		</nav>
+		
+		
+		
+		<nav id="21">
+			<div>
+		  		<div class = "paper">PhilosophyEntry</div>
+		    </div>
+		</nav>
+		
+		
+		
+		<nav id="31">
+			<div>
+		  		<div class = "paper">ThoughtEntry</div>
+		    </div>
+		</nav>
+		
+		
+	</body>
+
+</html>
