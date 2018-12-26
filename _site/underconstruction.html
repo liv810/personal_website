@@ -16,16 +16,16 @@
 
         // Prepare displaycards, for the active tab.
 		  
-		   // $('#1').mmenu({
-		       // "offCanvas": {
-		       //     "zposition": "front",
-		       //     "position": "right"
-		       // },
-		       // "header": {
-	        //    	"title": "ThoughtTitle",
-		       //  "add": true,
-	        //     "update": true},
-		   // });
+		   $('#1').mmenu({
+		       "offCanvas": {
+		           "zposition": "front",
+		           "position": "right"
+		       },
+		       "header": {
+	           	"title": "ThoughtTitle",
+		        "add": true,
+	            "update": true},
+		   });
 	     
 
 		// Dynamically insert HTML into main div
@@ -59,19 +59,30 @@
 		 	<div id="topBar">
 		    	<a href ="#" id="load_home"> HOME </a>
 			</div>
-			<div id ="content">        
-			</div>
 
-			<!-- Generate list items. -->
-			
-			<nav id='1'>
+			<div id ="content"> 
+				<!-- Generate list items. -->
+				
+				<!-- The extra div wrapper makes each rectangle appear below the next. -->
 				<div>
-			  		<div class = "paper">ThoughtEntry</div>
-			    </div>
-			</nav>
-			
-
+					<a href = '#1'>
+						<!-- Makes entire div clickable. -->
+						<span class="link-spanner" id="rounded-rectangle">ThoughtEntry</span>
+					</a>
+				</div>
+				
+			</div>
 		</div>
+
+		<!-- Generate displaycard items. -->
+		
+		<nav id='1'>
+			<!-- Extra div necessary to contain wrapper for paper background. -->
+			<div>
+		  		<div class = "paper">ThoughtEntry</div>
+		    </div>
+		</nav>
+		
 
 
 	</body>

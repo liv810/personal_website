@@ -14,69 +14,71 @@
 		        "extensions": ["widescreen"]
 		    });
 
-        // Prepare displaycards, for the active tab.
-		   // $("#listitem").mmenu({"offCanvas":false}
-		   // {
-		   //     "offCanvas": {
-		   //         "zposition": "front",
-		   //         "position": "right"
-		   //     },
-		   //     "header": {
-	    //        	"title": "Higher percentage of life-changing experiences.",
-		   //      "add": true,
-	    //         "update": true},
-		   // }
-		   // );
+        // Prepare displaycards (set positioning and header).
+		   $("#listitem").mmenu(
+		   {
+		       "offCanvas": {
+		           "zposition": "front",
+		           "position": "right"
+		       },
+		       "header": {
+	           	"title": "Higher percentage of life-changing experiences.",
+		        "add": true,
+	            "update": true}
+		   }
+		   );
 
-		// Dynamically insert HTML into main div
-		$("#load_home").on("click", function() {
-        	$("#content").load("aboutme.html");
-    	});
+		// var API = $("#listitem").data( "mmenu" );
 
-    	var API = $("#sidebar").data( "mmenu" );
-      
-	      $("#listitem").click(function() {
-	         API.close();
-	      });
+		// // Dynamically insert HTML into main div
+		// $("#content").on("click", function() {
+  //       	API.open();
+  //   	});
+
+  //   	$("#content").on("click", function() {
+  //       	API.close();
+  //   	});
 
 	  	});
 		</script>
 	</head>
 
 	<body>
+		
+			<!-- Generate (permanent) sidebar. -->
+			<nav id="sidebar">
+				<ul>
+				    <li><a href="ideas.html">Ideas that I'd love to work on</a></li>
+				    <li><a href="philosophies.html">Philosophies</a></li>
+				    <li><a href="underconstruction.html">Thoughts under construction</a></li>
+				</ul>
+			</nav>
 
-		<!-- Generate (permanent) sidebar. -->
-		<nav id="sidebar">
-			<ul>
-			    <li><a href="ideas.html">Ideas that I'd love to work on</a></li>
-			    <li><a href="philosophies.html">Philosophies</a></li>
-			    <li><a href="underconstruction.html">Thoughts under construction</a></li>
-			</ul>
-		</nav>
-
-		<!-- Generate main links. -->
-		<div class="main">
+			<!-- Generate main links. -->
+			<div class="main">
 
 
-			<!-- Dynamically generated content. -->
-		 	<div id="topBar">
-		    	<a href ="#" id="load_home"> HOME </a>
+				<!-- Dynamically generated content. -->
+			 	<div id="topBar">
+			    	<a href ="#listitem"> HOME </a>
+				</div>
+
+
+				<div id ="content">  
+					normal text here
+				</div>
+
 			</div>
 
-
-			<div id ="content">  
-			</div>
-
-			<!-- Generate list items. -->		
+			<!-- Generate displaycard items. -->		
 			<nav id="listitem">
+				<!-- Extra div necessary to contain paper background. -->
 				<div>
-			  		<div class = "paper">We should do more that will change our perspective. Blah blah blah.</div>
+			  		<div class = "paper">We should do more that will change our perspective. Blah blah blah. </div>
 			    </div>
 			</nav>   
 
 		</div>
-
-
 		
 	</body>
 

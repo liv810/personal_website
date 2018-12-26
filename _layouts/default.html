@@ -16,16 +16,16 @@
 
         // Prepare displaycards, for the active tab.
 		 {% for post in site.data[page.list].posts %} 
-		   // $('{{"#" | append: forloop.index}}').mmenu({
-		       // "offCanvas": {
-		       //     "zposition": "front",
-		       //     "position": "right"
-		       // },
-		       // "header": {
-	        //    	"title": "{{post.title}}",
-		       //  "add": true,
-	        //     "update": true},
-		   // });
+		   $('{{"#" | append: forloop.index}}').mmenu({
+		       "offCanvas": {
+		           "zposition": "front",
+		           "position": "right"
+		       },
+		       "header": {
+	           	"title": "{{post.title}}",
+		        "add": true,
+	            "update": true},
+		   });
 	     {% endfor %}
 
 		// Dynamically insert HTML into main div
@@ -55,19 +55,30 @@
 		 	<div id="topBar">
 		    	<a href ="#" id="load_home"> HOME </a>
 			</div>
-			<div id ="content">        
-			</div>
 
-			<!-- Generate list items. -->
-			{% for post in site.data[page.list].posts %}
-			<nav id='{{forloop.index}}'>
+			<div id ="content"> 
+				<!-- Generate list items. -->
+				{% for post in site.data[page.list].posts %}
+				<!-- The extra div wrapper makes each rectangle appear below the next. -->
 				<div>
-			  		<div class = "paper">{{ post.entry }}</div>
-			    </div>
-			</nav>
-			{% endfor %}
-
+					<a href = '{{"#" | append: forloop.index}}'>
+						<!-- Makes entire div clickable. -->
+						<span class="link-spanner" id="rounded-rectangle">{{ post.entry }}</span>
+					</a>
+				</div>
+				{% endfor %}
+			</div>
 		</div>
+
+		<!-- Generate displaycard items. -->
+		{% for post in site.data[page.list].posts %}
+		<nav id='{{forloop.index}}'>
+			<!-- Extra div necessary to contain wrapper for paper background. -->
+			<div>
+		  		<div class = "paper">{{ post.entry }}</div>
+		    </div>
+		</nav>
+		{% endfor %}
 
 
 	</body>
