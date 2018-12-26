@@ -15,20 +15,18 @@
 		    });
 
         // Prepare displaycards, for the active tab.
-		   {% for section in site.data.web_contents.sections %}
-			 {% for post in section.posts %} 
-			   $("#{{forloop.parentloop.index}}{{forloop.index}}").mmenu({
-			       "offCanvas": {
-			           "zposition": "front",
-			           "position": "right"
-			       },
-			       "header": {
-		           	"title": "{{post.title}}",
-			        "add": true,
-		            "update": true},
-			   });
-		     {% endfor %}
-		  {% endfor %}
+		 {% for post in site.data[page.list].posts %} 
+		   // $('{{"#" | append: forloop.index}}').mmenu({
+		       // "offCanvas": {
+		       //     "zposition": "front",
+		       //     "position": "right"
+		       // },
+		       // "header": {
+	        //    	"title": "{{post.title}}",
+		       //  "add": true,
+	        //     "update": true},
+		   // });
+	     {% endfor %}
 
 		// Dynamically insert HTML into main div
 		$("#load_home").on("click", function() {
@@ -44,7 +42,7 @@
 		<!-- Generate (permanent) sidebar. -->
 		<nav id="sidebar">
 			<ul>
-			  {% for section in site.data.web_contents.sections %}
+			  {% for section in site.data.sidebar.sections %}
 			    <li><a href="{{section.url}}">{{section.section}}</a></li>
 			  {% endfor %}
 			</ul>
@@ -60,18 +58,18 @@
 			<div id ="content">        
 			</div>
 
+			<!-- Generate list items. -->
+			{% for post in site.data[page.list].posts %}
+			<nav id='{{forloop.index}}'>
+				<div>
+			  		<div class = "paper">{{ post.entry }}</div>
+			    </div>
+			</nav>
+			{% endfor %}
+
 		</div>
 
-		<!-- Generate displaycard. -->
-		{% for section in site.data.web_contents.sections %}
-		{% for post in section.posts %}
-		<nav id="{{forloop.parentloop.index}}{{forloop.index}}">
-			<div>
-		  		<div class = "paper">{{ post.entry }}</div>
-		    </div>
-		</nav>
-		{% endfor %}
-		{% endfor %}
+
 	</body>
 
 </html>
