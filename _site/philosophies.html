@@ -28,11 +28,6 @@
 		   });
 	     
 
-		// Dynamically insert HTML into main div
-		$("#load_home").on("click", function() {
-        	$("#content").load("aboutme.html");
-    	});
-
 	  	});
 		</script>
 	</head>
@@ -56,22 +51,17 @@
 		<div class="main">
 
 			<!-- Dynamically generated content. -->
-		 	<div id="topBar">
-		    	<a href ="#" id="load_home"> HOME </a>
-			</div>
-
 			<div id ="content"> 
 				<!-- Generate list items. -->
 				
-				<!-- The extra div wrapper makes each rectangle appear below the next. -->
-				<div>
-					<a href = '#1'>
-						<!-- Makes entire div clickable. -->
-						<span class="link-spanner" id="rounded-rectangle">PhilosophyEntry</span>
-					</a>
+				<div id="rounded-rectangle">
+					PhilosophyTitle
+					<!-- Makes entire div clickable. -->
+					<a href = '#1'><span class="link-spanner"></span></a>
 				</div>
 				
 			</div>
+
 		</div>
 
 		<!-- Generate displaycard items. -->
