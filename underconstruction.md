@@ -1,5 +1,5 @@
 ---
 layout: default
-title: ideas
+title: Under Construction
 list: "underconstruction"
 ---

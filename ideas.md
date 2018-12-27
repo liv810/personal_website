@@ -1,5 +1,5 @@
 ---
 layout: default
-title: ideas
+title: Ideas
 list: "ideas"
 ---

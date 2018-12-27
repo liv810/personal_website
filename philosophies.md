@@ -1,5 +1,5 @@
 ---
 layout: default
-title: ideas
+title: Philosophies
 list: "philosophies"
 ---
