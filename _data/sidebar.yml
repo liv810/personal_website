@@ -1,10 +1,10 @@
 sections:
   - section: Ideas that I'd love to work on
     url: ideas
-    icon: "https://image.flaticon.com/icons/svg/427/427735.svg"
+    icon: "images/lightbulb-drawn.png"
   - section: Philosophies
     url: philosophies
-    icon: "https://image.flaticon.com/icons/svg/104/104524.svg"
+    icon: "images/yinyang-drawn.png"
   - section: Thoughts under construction
     url: underconstruction
     icon: "https://image.flaticon.com/icons/svg/771/771622.svg"
