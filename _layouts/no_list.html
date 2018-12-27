@@ -14,20 +14,6 @@
 		        "extensions": ["widescreen"]
 		    });
 
-        // Prepare displaycards, for the active tab.
-		 {% for post in site.data[page.list].posts %} 
-		   $('{{"#" | append: forloop.index}}').mmenu({
-		       "offCanvas": {
-		           "zposition": "front",
-		           "position": "right"
-		       },
-		       "header": {
-	           	"title": "{{post.title}}",
-		        "add": true,
-	            "update": true},
-		   });
-	     {% endfor %}
-
 	  	});
 		</script>
 		<title>{{ page.title | append: " | Olivia"}}</title>
@@ -61,20 +47,11 @@
 				{% endfor %}
 			</div>
 
+		<div id="rounded-rectangle" style="width:90%;">
+			{{content}}
 		</div>
 
-		<!-- Generate displaycard items. -->
-		{% for post in site.data[page.list].posts %}
-		<nav id='{{forloop.index}}'>
-			<!-- Close button. -->
-			<a href="#mm-0">Close</a>
-			<!-- Extra div necessary to contain wrapper for paper background. -->
-			<div>
-		  		<div class = "paper">{{ post.entry }}</div>
-		    </div>
-		</nav>
-		{% endfor %}
-
+		</div>
 
 	</body>
 
