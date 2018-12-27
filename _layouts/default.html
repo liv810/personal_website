@@ -66,6 +66,8 @@
 		<!-- Generate displaycard items. -->
 		{% for post in site.data[page.list].posts %}
 		<nav id='{{forloop.index}}'>
+			<!-- Close button. -->
+			<a href="#mm-0">Close</a>
 			<!-- Extra div necessary to contain wrapper for paper background. -->
 			<div>
 		  		<div class = "paper">{{ post.entry }}</div>
