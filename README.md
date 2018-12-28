@@ -24,6 +24,12 @@ http://mmenu.frebsite.nl/
 - Displaycards are menus that appear when list items, which are hrefs to displaycards, are clicked.
   Clicking on a list item (e.g. href="#1") then triggers to reveal the displaycard (whose HTML and javascript have been pre-written).
 
+## mmenu oddities
+- Version 7.0.0 & 7.2.2 (and presumably everything in between)
+	- "offCanvas": {"position": "right"} not work
+	- have to include positioning CSS and "extensions": ["position-right"] instead
+		- but positioning is "incompatible with" sidebar extension (http://mmenu.frebsite.nl/documentation/extensions/positioning.html)
+
 ## Term definitions (try to keep consistent in the code).
 - Sidebar
   Refers to the left sidebar that should (basically) be always present and allows the user to select which list to view.
