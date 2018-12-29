@@ -1,10 +1,7 @@
 sections:
-  - section: Ideas that I'd love to work on
-    url: ideas
-    icon: "images/lightbulb-drawn.png"
-  - section: Philosophies
+  - section: My philosophies
     url: philosophies
     icon: "images/yinyang-drawn.png"
-  - section: Thoughts under construction
-    url: underconstruction
-    icon: "https://image.flaticon.com/icons/svg/771/771622.svg"
+  - section: Ideas worth working on
+    url: ideas
+    icon: "images/lightbulb-drawn.png"
