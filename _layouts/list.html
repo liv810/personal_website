@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	  <link rel="stylesheet" href="css/wunderlist_main.css">
 	  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/lato" type="text/css"/>
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.0.4/css/jquery.mmenu.all.css">
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.0.4/js/jquery.mmenu.min.all.js"></script>
-	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.0.4/css/extensions/jquery.mmenu.widescreen.css"  media="all and (min-width: 900px)" />
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.0.4/css/extensions/jquery.mmenu.widescreen.css"  media="all" />
+	  <link rel="stylesheet" href="css/wunderlist_main.css">
 	  <script>
 	  	// Prepare sidebar.
          jQuery(document).ready(function( $ ) {
@@ -40,39 +40,43 @@
 			<ul>
 			  {% for section in site.data.sidebar.sections %}
 			    <div style="padding: 10px;">
-			    <a href="{{section.url}}"><img src="{{section.icon}}" height=20 width=20 hspace=10/>{{section.section}}</a>
+			    <a href="{{section.url}}">
+			    {% if section contains 'icon' %}
+			    	<img src="{{section.icon}}" height=20 width=20 hspace=10/>
+			    {% endif %}
+				{{section.section}} </a>
 				</div>
 			  {% endfor %}
 			</ul>
 		</nav>
 
-		<!-- Generate main links. -->
 		<div class="main">
-
-			<!-- Dynamically generated content. -->
-			<div id ="content"> 
-				<!-- Generate list items. -->
-				{% for post in site.data[page.list].posts %}
-				<div id="rounded-rectangle">
-					{{post.title}}
-					<!-- Makes entire div clickable. -->
-					<a href = '{{"#" | append: forloop.index}}'><span class="link-spanner"></span></a>
-				</div>
-				{% endfor %}
-			</div>
-
+			<!-- Generate displaycard items. -->
+			{% for post in site.data[page.list].posts %}
+			<nav id='{{forloop.index}}'>
+				<!-- Close button. -->
+				<a href="#mm-0">Close</a>
+				<!-- Extra div necessary to contain wrapper for paper background. -->
+				<div>
+			  		<div class = "paper">{{ post.entry }}</div>
+			    </div>
+			</nav>
+			{% endfor %}
 		</div>
 
-		<!-- Generate displaycard items. -->
+		<!-- Dynamically generate list items. -->
 		{% for post in site.data[page.list].posts %}
-		<nav id='{{forloop.index}}'>
-			<!-- Close button. -->
-			<a href="#mm-0">Close</a>
-			<!-- Extra div necessary to contain wrapper for paper background. -->
-			<div>
-		  		<div class = "paper">{{ post.entry }}</div>
-		    </div>
-		</nav>
+		<div id="rounded-rectangle">
+			<font size=3><b> {{post.title}} </b></font>
+			<a href = '{{"#" | append: forloop.index}}'>
+				<span style="float:right;">
+					<!-- Right-aligned date. -->
+					<small> {{post.date}} </small>
+					<!-- Makes entire div clickable. -->
+					<span class="link-spanner"></span>
+				</span>
+			</a>
+		</div>
 		{% endfor %}
 
 	</body>

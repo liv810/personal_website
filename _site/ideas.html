@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	  <link rel="stylesheet" href="css/wunderlist_main.css">
 	  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/lato" type="text/css"/>
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.0.4/css/jquery.mmenu.all.css">
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.0.4/js/jquery.mmenu.min.all.js"></script>
-	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.0.4/css/extensions/jquery.mmenu.widescreen.css"  media="all and (min-width: 900px)" />
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.0.4/css/extensions/jquery.mmenu.widescreen.css"  media="all" />
+	  <link rel="stylesheet" href="css/wunderlist_main.css">
 	  <script>
 	  	// Prepare sidebar.
          jQuery(document).ready(function( $ ) {
@@ -55,7 +55,7 @@
 		           "position": "right"
 		       },
 		       "header": {
-	           	"title": "Helping people find what they want to work on",
+	           	"title": "Making it easier to learn about topics in depth",
 		        "add": true,
 	            "update": true},
 		   });
@@ -77,7 +77,7 @@
 		           "position": "right"
 		       },
 		       "header": {
-	           	"title": "Making it easier to learn about topics in depth",
+	           	"title": "Helping people find what they want to work on",
 		        "add": true,
 	            "update": true},
 		   });
@@ -95,118 +95,162 @@
 			<ul>
 			  
 			    <div style="padding: 10px;">
-			    <a href="philosophies"><img src="images/yinyang-drawn.png" height=20 width=20 hspace=10/>My philosophies</a>
+			    <a href="aboutme">
+			    
+				About me </a>
 				</div>
 			  
 			    <div style="padding: 10px;">
-			    <a href="ideas"><img src="images/lightbulb-drawn.png" height=20 width=20 hspace=10/>Ideas worth working on</a>
+			    <a href="philosophies">
+			    
+			    	<img src="images/yinyang-drawn.png" height=20 width=20 hspace=10/>
+			    
+				My philosophies </a>
+				</div>
+			  
+			    <div style="padding: 10px;">
+			    <a href="ideas">
+			    
+			    	<img src="images/lightbulb-drawn.png" height=20 width=20 hspace=10/>
+			    
+				Ideas worth working on </a>
 				</div>
 			  
 			</ul>
 		</nav>
 
-		<!-- Generate main links. -->
 		<div class="main">
-
-			<!-- Dynamically generated content. -->
-			<div id ="content"> 
-				<!-- Generate list items. -->
-				
-				<div id="rounded-rectangle">
-					Better use of space (buildings are only used half the time).
-					<!-- Makes entire div clickable. -->
-					<a href = '#1'><span class="link-spanner"></span></a>
-				</div>
-				
-				<div id="rounded-rectangle">
-					Organizing complex ideas
-					<!-- Makes entire div clickable. -->
-					<a href = '#2'><span class="link-spanner"></span></a>
-				</div>
-				
-				<div id="rounded-rectangle">
-					Improved peer-to-peer selling/lending services, (i.e. eBay improved)
-					<!-- Makes entire div clickable. -->
-					<a href = '#3'><span class="link-spanner"></span></a>
-				</div>
-				
-				<div id="rounded-rectangle">
-					Helping people find what they want to work on
-					<!-- Makes entire div clickable. -->
-					<a href = '#4'><span class="link-spanner"></span></a>
-				</div>
-				
-				<div id="rounded-rectangle">
-					Closer communities of people
-					<!-- Makes entire div clickable. -->
-					<a href = '#5'><span class="link-spanner"></span></a>
-				</div>
-				
-				<div id="rounded-rectangle">
-					Making it easier to learn about topics in depth
-					<!-- Makes entire div clickable. -->
-					<a href = '#6'><span class="link-spanner"></span></a>
-				</div>
-				
-			</div>
-
+			<!-- Generate displaycard items. -->
+			
+			<nav id='1'>
+				<!-- Close button. -->
+				<a href="#mm-0">Close</a>
+				<!-- Extra div necessary to contain wrapper for paper background. -->
+				<div>
+			  		<div class = "paper"><p>Office buildings are used during the day; residential homes are used at night. That means that at any given time, either a person's workspace or their home is being used. Can we make a more efficient use of this space by combining both? Making an office space that can convert into a home at night, perhaps with parts of each of these spaces that remain private (e.g. places with valuables.)</p> <p>PROS&colon; <li>Would halve rent <li>Reduce urban sprawl</p> <p>CONS&colon; <li>Is lack of city space one of our pressing issues right now?</div>
+			    </div>
+			</nav>
+			
+			<nav id='2'>
+				<!-- Close button. -->
+				<a href="#mm-0">Close</a>
+				<!-- Extra div necessary to contain wrapper for paper background. -->
+				<div>
+			  		<div class = "paper">I find that it's hard for me to make interconnections between my ideas because there's no good way for me to put down my thoughts in a coherent manner where things can be connected later.  My dream is to have some map of my thoughts that I can see patterns in post-hoc. <a href="https://en.wikipedia.org/wiki/Memex">Memex?</a></div>
+			    </div>
+			</nav>
+			
+			<nav id='3'>
+				<!-- Close button. -->
+				<a href="#mm-0">Close</a>
+				<!-- Extra div necessary to contain wrapper for paper background. -->
+				<div>
+			  		<div class = "paper">eBay doesn't work that well for some things right now&colon; <ul><li>Large items that it would cost a lot to ship <li>Shoes and clothing where the fit matters a lot <li>Low-worth items </ul> but a lot of my items fit into these exact categories. I have been envisioning local warehouses where people can long-term store their stuff (e.g. a pair of shoes they don't want anymore) that would be paired with an online searchable database (like eBay).  Then, a customer can come in to the warehouse and ask to see a certain item, and then pay the attendant to carry it out right then.  Would only work locally.</div>
+			    </div>
+			</nav>
+			
+			<nav id='4'>
+				<!-- Close button. -->
+				<a href="#mm-0">Close</a>
+				<!-- Extra div necessary to contain wrapper for paper background. -->
+				<div>
+			  		<div class = "paper">The Internet is a good place to learn about many topics shallowly, largely due to the "news feed" and aggregate news websites. But it's hard to learn about a topic in depth.  Often it feels like there are a goodfew starting websites (Wikipedia, Quora, Reddit) and then in-depth topics (journal papers, technical articles), but not too much in between.</div>
+			    </div>
+			</nav>
+			
+			<nav id='5'>
+				<!-- Close button. -->
+				<a href="#mm-0">Close</a>
+				<!-- Extra div necessary to contain wrapper for paper background. -->
+				<div>
+			  		<div class = "paper">This is one of my biggest asks about the world.</div>
+			    </div>
+			</nav>
+			
+			<nav id='6'>
+				<!-- Close button. -->
+				<a href="#mm-0">Close</a>
+				<!-- Extra div necessary to contain wrapper for paper background. -->
+				<div>
+			  		<div class = "paper"><p>It strikes me that the world could be a happier, more connected place if more people were working on what they want to work on. Possible methods &colon; more unpaid internships, more shadowing days for companies, rotation programs where one can see what many different occupations are like starting in high school or early college</div>
+			    </div>
+			</nav>
+			
 		</div>
 
-		<!-- Generate displaycard items. -->
+		<!-- Dynamically generate list items. -->
 		
-		<nav id='1'>
-			<!-- Close button. -->
-			<a href="#mm-0">Close</a>
-			<!-- Extra div necessary to contain wrapper for paper background. -->
-			<div>
-		  		<div class = "paper"><p>Office buildings are used during the day; residential homes are used at night. That means that at any given time, either a person's workspace or their home is being used. Can we make a more efficient use of this space by combining both? Making an office space that can convert into a home at night, perhaps with parts of each of these spaces that remain private (e.g. places with valuables.)</p> <p>PROS&colon; <li>Would halve rent <li>Reduce urban sprawl</p> <p>CONS&colon; <li>Is lack of city space one of our pressing issues right now?</div>
-		    </div>
-		</nav>
+		<div id="rounded-rectangle">
+			<font size=3><b> Better use of space (buildings are only used half the time). </b></font>
+			<a href = '#1'>
+				<span style="float:right;">
+					<!-- Right-aligned date. -->
+					<small> 8/2018 </small>
+					<!-- Makes entire div clickable. -->
+					<span class="link-spanner"></span>
+				</span>
+			</a>
+		</div>
 		
-		<nav id='2'>
-			<!-- Close button. -->
-			<a href="#mm-0">Close</a>
-			<!-- Extra div necessary to contain wrapper for paper background. -->
-			<div>
-		  		<div class = "paper">I find that it's hard for me to make interconnections between my ideas because there's no good way for me to put down my thoughts in a coherent manner where things can be connected later.  My dream is to have some map of my thoughts that I can see patterns in post-hoc. <a href="https://en.wikipedia.org/wiki/Memex">Memex?</a></div>
-		    </div>
-		</nav>
+		<div id="rounded-rectangle">
+			<font size=3><b> Organizing complex ideas </b></font>
+			<a href = '#2'>
+				<span style="float:right;">
+					<!-- Right-aligned date. -->
+					<small> 8/2018 </small>
+					<!-- Makes entire div clickable. -->
+					<span class="link-spanner"></span>
+				</span>
+			</a>
+		</div>
 		
-		<nav id='3'>
-			<!-- Close button. -->
-			<a href="#mm-0">Close</a>
-			<!-- Extra div necessary to contain wrapper for paper background. -->
-			<div>
-		  		<div class = "paper">eBay doesn't work that well for some things right now&colon; <ul><li>Large items that it would cost a lot to ship <li>Shoes and clothing where the fit matters a lot <li>Low-worth items </ul> but a lot of my items fit into these exact categories. I have been envisioning local warehouses where people can long-term store their stuff (e.g. a pair of shoes they don't want anymore) that would be paired with an online searchable database (like eBay).  Then, a customer can come in to the warehouse and ask to see a certain item, and then pay the attendant to carry it out right then.  Would only work locally.</div>
-		    </div>
-		</nav>
+		<div id="rounded-rectangle">
+			<font size=3><b> Improved peer-to-peer selling/lending services, (i.e. eBay improved) </b></font>
+			<a href = '#3'>
+				<span style="float:right;">
+					<!-- Right-aligned date. -->
+					<small> 8/2018 </small>
+					<!-- Makes entire div clickable. -->
+					<span class="link-spanner"></span>
+				</span>
+			</a>
+		</div>
 		
-		<nav id='4'>
-			<!-- Close button. -->
-			<a href="#mm-0">Close</a>
-			<!-- Extra div necessary to contain wrapper for paper background. -->
-			<div>
-		  		<div class = "paper"><p>It strikes me that the world could be a happier, more connected place if more people were working on what they want to work on. Possible methods &colon; more unpaid internships, more shadowing days for companies, rotation programs where one can see what many different occupations are like starting in high school or early college</div>
-		    </div>
-		</nav>
+		<div id="rounded-rectangle">
+			<font size=3><b> Making it easier to learn about topics in depth </b></font>
+			<a href = '#4'>
+				<span style="float:right;">
+					<!-- Right-aligned date. -->
+					<small> 8/2018 </small>
+					<!-- Makes entire div clickable. -->
+					<span class="link-spanner"></span>
+				</span>
+			</a>
+		</div>
 		
-		<nav id='5'>
-			<!-- Close button. -->
-			<a href="#mm-0">Close</a>
-			<!-- Extra div necessary to contain wrapper for paper background. -->
-			<div>
-		  		<div class = "paper">This is one of my biggest asks about the world.</div>
-		    </div>
-		</nav>
+		<div id="rounded-rectangle">
+			<font size=3><b> Closer communities of people </b></font>
+			<a href = '#5'>
+				<span style="float:right;">
+					<!-- Right-aligned date. -->
+					<small> 10/2015 </small>
+					<!-- Makes entire div clickable. -->
+					<span class="link-spanner"></span>
+				</span>
+			</a>
+		</div>
 		
-		<nav id='6'>
-			<!-- Close button. -->
-			<a href="#mm-0">Close</a>
-			<!-- Extra div necessary to contain wrapper for paper background. -->
-			<div>
-		  		<div class = "paper">The Internet is a good place to learn about many topics shallowly, largely due to the "news feed" and aggregate news websites. But it's hard to learn about a topic in depth.  Often it feels like there are a goodfew starting websites (Wikipedia, Quora, Reddit) and then in-depth topics (journal papers, technical articles), but not too much in between.</div>
-		    </div>
-		</nav>
+		<div id="rounded-rectangle">
+			<font size=3><b> Helping people find what they want to work on </b></font>
+			<a href = '#6'>
+				<span style="float:right;">
+					<!-- Right-aligned date. -->
+					<small> 10/2015 </small>
+					<!-- Makes entire div clickable. -->
+					<span class="link-spanner"></span>
+				</span>
+			</a>
+		</div>
 		
 
 	</body>

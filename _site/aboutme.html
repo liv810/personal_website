@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	  <link rel="stylesheet" href="css/wunderlist_main.css">
 	  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/lato" type="text/css"/>
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.0.4/css/jquery.mmenu.all.css">
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.0.4/js/jquery.mmenu.min.all.js"></script>
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.0.4/css/extensions/jquery.mmenu.widescreen.css"  media="all and (min-width: 900px)" />
+	  <link rel="stylesheet" href="css/wunderlist_main.css">
 	  <script>
 	  	// Prepare sidebar.
          jQuery(document).ready(function( $ ) {
@@ -26,27 +26,36 @@
 			<ul>
 			  
 			    <div style="padding: 10px;">
-			    <a href="philosophies"><img src="images/yinyang-drawn.png" height=20 width=20 hspace=10/>My philosophies</a>
+			    <a href="aboutme">
+			    
+				About me </a>
 				</div>
 			  
 			    <div style="padding: 10px;">
-			    <a href="ideas"><img src="images/lightbulb-drawn.png" height=20 width=20 hspace=10/>Ideas worth working on</a>
+			    <a href="philosophies">
+			    
+			    	<img src="images/yinyang-drawn.png" height=20 width=20 hspace=10/>
+			    
+				My philosophies </a>
+				</div>
+			  
+			    <div style="padding: 10px;">
+			    <a href="ideas">
+			    
+			    	<img src="images/lightbulb-drawn.png" height=20 width=20 hspace=10/>
+			    
+				Ideas worth working on </a>
 				</div>
 			  
 			</ul>
 		</nav>
 
-		<!-- Generate main links. -->
 		<div class="main">
+			<div id="rounded-rectangle" style="width:90%;">
+				<p>A brief history of time:
+<img src="images/timeline.png" alt="Life Timeline" style="width:100%" /></p>
 
-			<!-- Dynamically generated content. -->
-			<div id ="content"> 
-				<!-- Generate list items. -->
-				
-			</div>
-
-		<div id="rounded-rectangle" style="width:90%;">
-			<p>This website is inspired by my Wunderlist, which I use to keep track of my to-dos but also my thoughts and ideas, and I’ve realized has become quite a good description of who I am.</p>
+<p>This website is inspired by my Wunderlist, which I use to keep track of my to-dos but also my thoughts and ideas, and I’ve realized has become quite a good description of who I am.</p>
 
 <p>One of my most fundamental curiosities is what happens when we challenge our basic assumptions.</p>
 <ul>
@@ -66,8 +75,7 @@
   <li>feeding ourselves on the go <a href="https://soylent.com/">(Soylent)</a></li>
 </ul>
 
-		</div>
-
+			</div>
 		</div>
 
 	</body>

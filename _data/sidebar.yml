@@ -1,4 +1,6 @@
 sections:
+  - section: About me
+    url: aboutme
   - section: My philosophies
     url: philosophies
     icon: "images/yinyang-drawn.png"

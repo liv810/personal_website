@@ -2,6 +2,9 @@
 layout: no_list
 title: About Me
 ---
+A brief history of time:
+<img src="images/timeline.png" alt="Life Timeline" style="width:100%">
+
 This website is inspired by my Wunderlist, which I use to keep track of my to-dos but also my thoughts and ideas, and I've realized has become quite a good description of who I am.
 
 One of my most fundamental curiosities is what happens when we challenge our basic assumptions.
