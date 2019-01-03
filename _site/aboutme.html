@@ -5,14 +5,17 @@
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.0.4/css/jquery.mmenu.all.css">
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.0.4/js/jquery.mmenu.min.all.js"></script>
-	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.0.4/css/extensions/jquery.mmenu.widescreen.css"  media="all and (min-width: 900px)" />
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.0.4/css/extensions/jquery.mmenu.widescreen.css"  media="all" />
 	  <link rel="stylesheet" href="css/wunderlist_main.css">
 	  <script>
 	  	// Prepare sidebar.
          jQuery(document).ready(function( $ ) {
 		    $("#sidebar").mmenu({
-		        "extensions": ["widescreen"]
+		        "extensions": ["widescreen"],
+		        "slidingSubmenus": false
 		    });
+
+         
 
 	  	});
 		</script>
@@ -23,36 +26,27 @@
 
 		<!-- Generate (permanent) sidebar. -->
 		<nav id="sidebar">
-			<ul>
-			  
-			    <div style="padding: 10px;">
-			    <a href="aboutme">
-			    
-				About me </a>
-				</div>
-			  
-			    <div style="padding: 10px;">
-			    <a href="philosophies">
-			    
-			    	<img src="images/yinyang-drawn.png" height=20 width=20 hspace=10/>
-			    
-				My philosophies </a>
-				</div>
-			  
-			    <div style="padding: 10px;">
-			    <a href="ideas">
-			    
-			    	<img src="images/lightbulb-drawn.png" height=20 width=20 hspace=10/>
-			    
-				Ideas worth working on </a>
-				</div>
-			  
-			</ul>
+		<ul>
+			<li><a href="aboutme">About me</a></li>
+			<!-- Manually add "mm-opened" class so that the folder is by default opened. -->
+			<li class="mm-opened"><span>Idea lists</span>
+				<ul>
+					<li><a href="philosophies"><img src="images/yinyang-drawn.png" height=20 width=20 hspace=10/>Philosophies</a></li>
+					<li><a href="ideas"><img src="images/lightbulb-drawn.png" height=20 width=20 hspace=10/>Ideas I'd like to work on</a></li>
+				</ul>
+			</li>
+		</ul>
 		</nav>
 
 		<div class="main">
+
+		<!-- If there is a list for this page, then generate the displaycards and list items. -->
+		
+		<div class="main">
 			<div id="rounded-rectangle" style="width:90%;">
-				<p>A brief history of time:
+				<center><img src="images/polaroid_headshot_caption.jpg" style="width:250px" /></center>
+
+<p>And here’s a brief history of my life:
 <img src="images/timeline.png" alt="Life Timeline" style="width:100%" /></p>
 
 <p>This website is inspired by my Wunderlist, which I use to keep track of my to-dos but also my thoughts and ideas, and I’ve realized has become quite a good description of who I am.</p>
@@ -77,6 +71,7 @@
 
 			</div>
 		</div>
+		 
 
 	</body>
 

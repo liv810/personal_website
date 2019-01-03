@@ -11,77 +11,80 @@
 	  	// Prepare sidebar.
          jQuery(document).ready(function( $ ) {
 		    $("#sidebar").mmenu({
-		        "extensions": ["widescreen"]
+		        "extensions": ["widescreen"],
+		        "slidingSubmenus": false
 		    });
 
-        // Prepare displaycards, for the active tab.
-		  
-		   $('#1').mmenu({
-		       "offCanvas": {
-		           "zposition": "front",
-		           "position": "right"
-		       },
-		       "header": {
-	           	"title": "Better use of space (buildings are only used half the time).",
-		        "add": true,
-	            "update": true},
-		   });
-	      
-		   $('#2').mmenu({
-		       "offCanvas": {
-		           "zposition": "front",
-		           "position": "right"
-		       },
-		       "header": {
-	           	"title": "Organizing complex ideas",
-		        "add": true,
-	            "update": true},
-		   });
-	      
-		   $('#3').mmenu({
-		       "offCanvas": {
-		           "zposition": "front",
-		           "position": "right"
-		       },
-		       "header": {
-	           	"title": "Improved peer-to-peer selling/lending services, (i.e. eBay improved)",
-		        "add": true,
-	            "update": true},
-		   });
-	      
-		   $('#4').mmenu({
-		       "offCanvas": {
-		           "zposition": "front",
-		           "position": "right"
-		       },
-		       "header": {
-	           	"title": "Making it easier to learn about topics in depth",
-		        "add": true,
-	            "update": true},
-		   });
-	      
-		   $('#5').mmenu({
-		       "offCanvas": {
-		           "zposition": "front",
-		           "position": "right"
-		       },
-		       "header": {
-	           	"title": "Closer communities of people",
-		        "add": true,
-	            "update": true},
-		   });
-	      
-		   $('#6').mmenu({
-		       "offCanvas": {
-		           "zposition": "front",
-		           "position": "right"
-		       },
-		       "header": {
-	           	"title": "Helping people find what they want to work on",
-		        "add": true,
-	            "update": true},
-		   });
-	     
+         
+        	// Prepare displaycards, for the active tab.
+			  
+			   $('#1').mmenu({
+			       "offCanvas": {
+			           "zposition": "front",
+			           "position": "right"
+			       },
+			       "header": {
+		           	"title": "Better use of space (buildings are only used half the time).",
+			        "add": true,
+		            "update": true},
+			   });
+		      
+			   $('#2').mmenu({
+			       "offCanvas": {
+			           "zposition": "front",
+			           "position": "right"
+			       },
+			       "header": {
+		           	"title": "Organizing complex ideas",
+			        "add": true,
+		            "update": true},
+			   });
+		      
+			   $('#3').mmenu({
+			       "offCanvas": {
+			           "zposition": "front",
+			           "position": "right"
+			       },
+			       "header": {
+		           	"title": "Improved peer-to-peer selling/lending services, (i.e. eBay improved)",
+			        "add": true,
+		            "update": true},
+			   });
+		      
+			   $('#4').mmenu({
+			       "offCanvas": {
+			           "zposition": "front",
+			           "position": "right"
+			       },
+			       "header": {
+		           	"title": "Making it easier to learn about topics in depth",
+			        "add": true,
+		            "update": true},
+			   });
+		      
+			   $('#5').mmenu({
+			       "offCanvas": {
+			           "zposition": "front",
+			           "position": "right"
+			       },
+			       "header": {
+		           	"title": "Closer communities of people",
+			        "add": true,
+		            "update": true},
+			   });
+		      
+			   $('#6').mmenu({
+			       "offCanvas": {
+			           "zposition": "front",
+			           "position": "right"
+			       },
+			       "header": {
+		           	"title": "Helping people find what they want to work on",
+			        "add": true,
+		            "update": true},
+			   });
+		     
+		 
 
 	  	});
 		</script>
@@ -92,34 +95,22 @@
 
 		<!-- Generate (permanent) sidebar. -->
 		<nav id="sidebar">
-			<ul>
-			  
-			    <div style="padding: 10px;">
-			    <a href="aboutme">
-			    
-				About me </a>
-				</div>
-			  
-			    <div style="padding: 10px;">
-			    <a href="philosophies">
-			    
-			    	<img src="images/yinyang-drawn.png" height=20 width=20 hspace=10/>
-			    
-				My philosophies </a>
-				</div>
-			  
-			    <div style="padding: 10px;">
-			    <a href="ideas">
-			    
-			    	<img src="images/lightbulb-drawn.png" height=20 width=20 hspace=10/>
-			    
-				Ideas worth working on </a>
-				</div>
-			  
-			</ul>
+		<ul>
+			<li><a href="aboutme">About me</a></li>
+			<!-- Manually add "mm-opened" class so that the folder is by default opened. -->
+			<li class="mm-opened"><span>Idea lists</span>
+				<ul>
+					<li><a href="philosophies"><img src="images/yinyang-drawn.png" height=20 width=20 hspace=10/>Philosophies</a></li>
+					<li><a href="ideas"><img src="images/lightbulb-drawn.png" height=20 width=20 hspace=10/>Ideas I'd like to work on</a></li>
+				</ul>
+			</li>
+		</ul>
 		</nav>
 
 		<div class="main">
+
+		<!-- If there is a list for this page, then generate the displaycards and list items. -->
+		 
 			<!-- Generate displaycard items. -->
 			
 			<nav id='1'>
@@ -252,6 +243,9 @@
 			</a>
 		</div>
 		
+		
+		<!-- If there is NOT a list for this page, just render content within a rectangular div. -->
+		 
 
 	</body>
 

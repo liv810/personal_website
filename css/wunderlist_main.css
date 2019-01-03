@@ -42,6 +42,11 @@ width numbers should sum to 100%. */
     margin-left: 20% !important;
 }
 
+/* Make title headers black (rather than gray). */
+.mm-menu .mm-header > a {
+    color: rgba(0, 0, 0, 1);
+}
+
 /*Rounded rectangles, for the entries. */
 #rounded-rectangle {
     border-radius: 10px;

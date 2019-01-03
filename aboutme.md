@@ -1,8 +1,10 @@
 ---
-layout: no_list
+layout: default
 title: About Me
 ---
-A brief history of time:
+<center><img src="images/polaroid_headshot_caption.jpg" style="width:250px"></center>
+
+And here's a brief history of my life:
 <img src="images/timeline.png" alt="Life Timeline" style="width:100%">
 
 This website is inspired by my Wunderlist, which I use to keep track of my to-dos but also my thoughts and ideas, and I've realized has become quite a good description of who I am.
