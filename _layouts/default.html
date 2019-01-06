@@ -15,7 +15,6 @@
 		        "slidingSubmenus": false
 		    });
 
-        {% if site.data[page.list] %} 
         	// Prepare displaycards, for the active tab.
 			 {% for post in site.data[page.list].posts %} 
 			   $('{{"#" | append: forloop.index}}').mmenu({
@@ -29,8 +28,6 @@
 		            "update": true},
 			   });
 		     {% endfor %}
-		{% endif %} 
-
 	  	});
 		</script>
 		<title>{{ page.title | append: " | Olivia"}}</title>
@@ -41,6 +38,7 @@
 		<!-- Generate (permanent) sidebar. -->
 		<nav id="sidebar">
 		<ul>
+			<li><a href="/"><img src="images/polaroid_headshot_caption.jpg" alt="Headshot" style="width:100%"></a></li>
 			<li><a href="aboutme">About me</a></li>
 			<!-- Manually add "mm-opened" class so that the folder is by default opened. -->
 			<li class="mm-opened"><span>Idea lists</span>
@@ -53,9 +51,6 @@
 		</nav>
 
 		<div class="main">
-
-		<!-- If there is a list for this page, then generate the displaycards and list items. -->
-		{% if site.data[page.list] %} 
 			<!-- Generate displaycard items. -->
 			{% for post in site.data[page.list].posts %}
 			<nav id='{{forloop.index}}'>
@@ -83,15 +78,6 @@
 			</a>
 		</div>
 		{% endfor %}
-		
-		<!-- If there is NOT a list for this page, just render content within a rectangular div. -->
-		{% else %}
-		<div class="main">
-			<div id="rounded-rectangle" style="width:90%;">
-				{{content}}
-			</div>
-		</div>
-		{% endif%} 
 
 	</body>
 
