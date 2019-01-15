@@ -1,94 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-	  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/lato" type="text/css"/>
-	  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebasneueregular" type="text/css"/>
-	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.0.4/css/jquery.mmenu.all.css">
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.0.4/js/jquery.mmenu.min.all.js"></script>
-	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.0.4/css/extensions/jquery.mmenu.widescreen.css"  media="all" />
-	  <link rel="stylesheet" href="css/wunderlist_main.css">
-	  <script>
-	  	// Prepare sidebar.
-         jQuery(document).ready(function( $ ) {
-		    $("#sidebar").mmenu({
-		        "extensions": ["widescreen"],
-		        "slidingSubmenus": false
-		    });
-	  	});
-		</script>
-		<style type="text/css">
-			/* Two image containers for side-by-side images. */
-			.col-33 {
-			    float:left;
-			    width:33.3%;
-			}
+<html>
+<head>
+  <!-- Add favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <!-- Yosemite background image -->
+  <style>
+	body {
+	 background-image: url("images/yosemite-background.png");
+	 background-repeat: no-repeat;
+	 background-size: 100%;
+	}
+  </style>
+  <link rel="stylesheet" type="text/css" href="css/home_main.css">
+  <title>About Me | Olivia Angiuli</title>
+</head>
 
-			.col-66 {
-			    float:left;
-			    width:66.6%;
-			}
-
-			/* Clear floats after image containers */
-			.row::after {
-			  content: "";
-			  clear: both;
-			  display: table;
-			}
-		</style>
-		<title>About Me | Olivia</title>
-	</head>
-
-	<body>
-
-		<!-- Generate (permanent) sidebar. -->
-		<nav id="sidebar">
-		<ul>
-			<li><a href="/"><img src="images/polaroid_headshot_caption.jpg" alt="Headshot" style="width:100%"></a></li>
-			<li><a href="aboutme">About me</a></li>
-			<!-- Manually add "mm-opened" class so that the folder is by default opened. -->
-			<li class="mm-opened"><span>Idea lists</span>
-				<ul>
-					<li><a href="philosophies"><img src="images/yinyang.png" height=20 width=20 hspace=10/>Current life-guiding principles</a></li>
-					<li><a href="ideas"><img src="images/lightbulb.png" height=20 width=20 hspace=10/>Entrepreneurial idea list</a></li>
-				</ul>
-			</li>
-		</ul>
-		</nav>
-
-		
-		<div class="main">
-			<div id="rounded-rectangle" style="width:90%; font-family:'LatoMedium';">
-				<p>Hi, I'm Olivia.  Congratulations on making it past the homepage!</p>
-
-			    <p>This website is inspired by Wunderlist, which I use to keep track of my to-dos, but also my thoughts and ideas, but I've realized has become quite a good description of who I am.  I hope that the notes and lists that I accumulate here will evolve to represent holistically who I am.</p>
-
-			    <p>I'm currently a 2nd year Ph.D. student in Statistics at Berkeley.  I double majored in Statistics and Computer Science at Harvard, and worked as a data scientist for Quora for two years before returning to graduate school.  I rock climb as my primary hobby.</p>
-
-				My most fundamental curiosities are what happens when we challenge our basic assumptions. For instance:
-				<ul>
-				<li> What if we were not constrained by expressing ideas in time and space? </li>
-				<li> What if humans have more than five senses? </li>
-				<li> What if a "minute" had been defined as 90 seconds? </li>
-				<li> What if plants truly feel pain? </li>
-				</ul>
-
-				<p>These questions remind us that the frameworks in which we work are neither fixed nor correct, and constantly remind myself to observe myself and understand my own frameworks.</p>
-
-				I'm often asked what my PhD research entails.  I'm currently dabbling with a couple of different ideas:
-				<ul>
-				<li> Do there exist notational changes or software that could improve the clarity of statistical thought? Inspired by Michael Nielsen's blogpost <a href="http://michaelnielsen.org/reinventing_explanation/index.html">here</a>, a highly recommended read. </li>
-				<li> Can we make causal inference more testable? We can never observe an individual under two different interventions, and it seems as though many models rely on assumptions of relationships that are <a href="https://www.jstor.org/stable/pdf/2669377.pdf">fundamentally untestable.</a></li>
-				<li> Can data be both anonymous, yet statistically representative of the original data? These are questions I've worked on at Harvard with Joe Blitzstein and Jim Waldo, and have published <a href="https://queue.acm.org/detail.cfm?id=2838930">here</a> and <a href="https://ieeexplore.ieee.org/document/7552278/?reload=true">here</a>.</li>
-				</ul>
-			</div>	
-
-			<p style="font-family: 'BebasNeueRegular'; font-size:23px; font-weight: 900; margin-left: 30px; margin-bottom:0px;">Brief timeline until now:</p>
-			<div id="rounded-rectangle" style="width:90%; margin-top:0px;">
-				<center><img src="images/timeline.png" alt="Life Timeline" style="width:80%"></center>
-			</div>
-		</div>
-
-	</body>
+<body>
+<div class='center-map'>
+	<img src="images/aboutmenote.png">
+</div>
+</body>
 
 </html>

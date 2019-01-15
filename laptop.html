@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebusneuebold" type="text/css"/>
+  <!-- Add favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <!-- Add jQuery library -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+  <!-- Add maphilight plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.0/jquery.maphilight.min.js"></script>
+  <!-- Activate maphilight plugin -->
+  <script type="text/javascript">
+    $(function() {
+          $('.map').maphilight();
+      });
+  </script>
+  <!-- Yosemite background image -->
+  <style>
+	body {
+	 background-image: url("images/yosemite-background.png");
+	 background-repeat: no-repeat;
+	 background-size: 100%;
+	}
+  </style>
+  <link rel="stylesheet" type="text/css" href="css/home_main.css">
+  <title>Olivia Angiuli</title>
+</head>
+
+<map name="image-map">
+    <area target="" alt="About Me" title="About Me" href="aboutme.html" coords="131,184,40,71" shape="rect" data-maphilight='{"fillColor":"0073e6","stroke":false,"fillOpacity":0.7}'>
+    <area target="" alt="Past Projects" title="Past Projects" href="pastprojects.html" coords="151,72,250,186" shape="rect" data-maphilight='{"fillColor":"0073e6","stroke":false,"fillOpacity":0.7}'>
+</map>
+
+<body>
+<div class='center-map'>
+	<img src="images/navigaton-window-small.png" class="map" usemap="#image-map">
+</div>
+</body>
+
+</html>
