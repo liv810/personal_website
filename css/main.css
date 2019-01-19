@@ -28,3 +28,29 @@ div {
     height:fit-content;
     width:fit-content;
 }
+
+#icon-list {
+   /* Position it at the top left of the containing div. */
+   position: absolute;
+   top: 10px;
+   left: 10px;
+
+   /* Dimensons of the icon-containing space. */
+   margin-top: 80px;
+   height: 355px; 
+   width: 780px;
+}
+
+/* Styling for links within an icon list (i.e., icons!)*/
+#icon-list a {
+    /* Icons are left-aligned within the icon-list space. */
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* Captions are center-aligned, and black. */
+    text-align:center;
+    text-decoration: none;
+    color: black;
+    font-family: 'Helvetica Neue';
+    font-size:15px;
+}
