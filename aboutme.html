@@ -13,6 +13,14 @@
           $('.map').maphilight();
       });
   </script>
+  <!-- Load in the subsections content. -->
+  <script src="aboutme-subsections.json.js"></script>
+  <!-- Load HTML page into div on click. -->
+  <script type="text/javascript">
+    function load_content(subsection) {
+         document.getElementById("sidepanel").innerHTML=data[subsection];
+    }
+  </script>
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <title>About me | Olivia Angiuli</title>
 </head>
@@ -29,13 +37,13 @@
     <div id="icon-list" style="float:left; width:41%;">
       <!-- Academic folder -->
       <div style="height:32px;"><img src="images/folder-icon.png" style="height:24px;"> Academic</div>
-      <div class="lined-folder-entry"><img src="images/notepad-icon.png" style="height:24px;">Data privacy</div>
+      <div class="lined-folder-entry"><a href="#dataprivacy" onclick="load_content('dataprivacy')"><img src="images/notepad-icon.png" style="height:24px;">Data privacy</a></div>
 
       <!-- Hobbies folder -->
       <div style="height:32px;"><img src="images/folder-icon.png" style="height:24px;"> Hobbies</div>
-      <div class="lined-folder-entry"><img src="images/notepad-icon.png" style="height:24px;">Climbing</div>
-      <div class="lined-folder-entry"><img src="images/notepad-icon.png" style="height:24px;">Adventure trips</div>
-      <div class="lined-folder-entry"><img src="images/notepad-icon.png" style="height:24px;">Running</div>
+      <div class="lined-folder-entry"><a href="#climbing" onclick="load_content('climbing')"><img src="images/notepad-icon.png" style="height:24px;">Climbing</a></div>
+      <div class="lined-folder-entry"><a href="#adventuretrips" onclick="load_content('adventuretrips')"><img src="images/notepad-icon.png" style="height:24px;">Adventure trips</a></div>
+      <div class="lined-folder-entry"><a href="#running" onclick="load_content('running')"><img src="images/notepad-icon.png" style="height:24px;">Running</a></div>
       
       <!-- CV -->
       <div style="height:32px;"><a href="cv.html" style="margin-left:0px"><img src="images/clipboard.png" style="height:24px; padding-top: 3px;"> CV <img src="images/external-link-icon.png" style="height:10px;padding-top: 7px;"></a></div>
