@@ -3,12 +3,27 @@
 <head>
   <!-- Add favicon -->
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <!-- Add jQuery library -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+  <!-- Add maphilight plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.0/jquery.maphilight.min.js"></script>
+  <!-- Activate maphilight plugin -->
+  <script type="text/javascript">
+    $(function() {
+          $('.map').maphilight();
+      });
+  </script>
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <title>Laptop | Olivia Angiuli</title>
 </head>
 
+<!-- Clickable back button. -->
+<map name="image-map">
+  <area target="" alt="Back" title="Back" href="/" coords="23,27,65,60" shape="rect" data-maphilight='{"fillColor":"0073e6","stroke":false,"fillOpacity":0.7}'>
+</map>
+
 <div class="center-map">
-    <img src="images/empty-navigation-window.png">
+    <img src="images/empty-navigation-window.png" class="map" usemap="#image-map">
     <div id="icon-list">
       <!-- About me -->
       <a href="aboutme.html">
