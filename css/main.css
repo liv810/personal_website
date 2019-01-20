@@ -10,6 +10,8 @@ body{
     background-image: url("../images/yosemite-background.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+    font-family: 'Helvetica Neue';
+    font-size:15px;
 }
 
 div {
@@ -53,4 +55,10 @@ div {
     color: black;
     font-family: 'Helvetica Neue';
     font-size:15px;
+}
+
+.lined-folder-entry {
+  height:32px;
+  width:310px;
+  padding-left: 20px;
 }
