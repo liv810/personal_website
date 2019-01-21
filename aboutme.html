@@ -3,6 +3,7 @@
 <head>
   <!-- Add favicon -->
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/lato" type="text/css"/>
   <!-- Add jQuery library -->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
   <!-- Add maphilight plugin -->
@@ -13,13 +14,13 @@
           $('.map').maphilight();
       });
   </script>
-  <!-- Load in the subsections content. -->
-  <script src="aboutme-subsections.json.js"></script>
   <!-- Load HTML page into div on click. -->
   <script type="text/javascript">
-    function load_content(subsection) {
-         document.getElementById("sidepanel").innerHTML=data[subsection];
-    }
+    $(document).ready( function() {
+      $("a.aboutmeitem").on("click", function() {
+          $("#sidepanel").load("aboutmesections/"+$(this).context.id+".html");
+      });
+    });
   </script>
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <title>About me | Olivia Angiuli</title>
@@ -34,23 +35,22 @@
     <img src="images/empty-navigation-window-lined-sidepanel.png" class="map" usemap="#image-map">
     <!-- Clickable back button -->
     <!-- Left panel with file list. -->
-    <div id="icon-list" style="float:left; width:41%;">
+    <div id="icon-list" style="float:left; width:41%">
       <!-- Academic folder -->
       <div style="height:32px;"><img src="images/folder-icon.png" style="height:24px;"> Academic</div>
-      <div class="lined-folder-entry"><a href="#dataprivacy" onclick="load_content('dataprivacy')"><img src="images/notepad-icon.png" style="height:24px;">Data privacy</a></div>
+      <div class="lined-folder-entry"><a href="#" class="aboutmeitem" id="dataprivacy"><img src="images/notepad-icon.png" style="height:24px;">Data privacy</a></div>
 
       <!-- Hobbies folder -->
       <div style="height:32px;"><img src="images/folder-icon.png" style="height:24px;"> Hobbies</div>
-      <div class="lined-folder-entry"><a href="#climbing" onclick="load_content('climbing')"><img src="images/notepad-icon.png" style="height:24px;">Climbing</a></div>
-      <div class="lined-folder-entry"><a href="#adventuretrips" onclick="load_content('adventuretrips')"><img src="images/notepad-icon.png" style="height:24px;">Adventure trips</a></div>
-      <div class="lined-folder-entry"><a href="#running" onclick="load_content('running')"><img src="images/notepad-icon.png" style="height:24px;">Running</a></div>
+      <div class="lined-folder-entry"><a href="#" class="aboutmeitem" id="climbing"><img src="images/notepad-icon.png" style="height:24px;">Climbing</a></div>
+      <div class="lined-folder-entry"><a href="#" class="aboutmeitem" id="running"><img src="images/notepad-icon.png" style="height:24px;">Running</a></div>
       
       <!-- CV -->
       <div style="height:32px;"><a href="cv.html" style="margin-left:0px"><img src="images/clipboard.png" style="height:24px; padding-top: 3px;"> CV <img src="images/external-link-icon.png" style="height:10px;padding-top: 7px;"></a></div>
     </div>
     
     <!-- Right panel with descriptions. -->
-    <div id="sidepanel" style="position: absolute; width:55%; height: 74%; left:335px; top:80px; margin:20px;">
+    <div id="sidepanel" style="position: absolute; width:55%; height: 74%; left:330px; top:70px; margin:20px">
       <center><img src="images/polaroid_headshot_caption.jpg" style="height:190px;"></center>
 
       <p>I’m a 2nd year Ph.D. student in Statistics at Berkeley.</p>
