@@ -4,30 +4,39 @@
   <!-- Add favicon -->
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <!-- Add jQuery library -->
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <!-- Add maphilight plugin -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.0/jquery.maphilight.min.js"></script>
+  <script type="text/javascript" src="https://davidlynch.org/projects/maphilight/jquery.maphilight.js"></script>
   <!-- Activate maphilight plugin -->
-  <script type="text/javascript">
-    $(function() {
-          $('.map').maphilight();
-      });
-  </script>
+    <script>$(function() {
+        $('.map').maphilight({});
+        $('#reveal-highlights-link').mouseover(function(e) {
+            $('.reveal-highlights').mouseover();
+        }).mouseout(function(e) {
+            $('.reveal-highlights').mouseout();
+        }).click(function(e) { e.preventDefault(); });
+    });</script>
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <!-- Remove Yosemite background image for the front page. -->
   <style>
     html, body{background-image: none;}
   </style>
+  <!-- Handwriting-style font just for front page. -->
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/grundschrift" type="text/css"/>
   <title>Olivia Angiuli</title>
 </head>
 
 <map name="image-map">
-    <area target="_self" alt="Blog" href="laptop.html" coords="430,306,439,369,478,382,553,326,522,316,507,264" shape="poly" data-maphilight='{"fillColor":"0073e6","stroke":false,"fillOpacity":0.7}' id="reveal-highlights">
-    <area target="_blank" alt="Olivia's Climbing Instagram" title="Olivia's Climbing Instagram" href="https://instagram.com/olivialalalala/?hl=en" coords="823,388,827,422,844,435,903,421,898,385" shape="poly" data-maphilight='{"fillColor":"0073e6","stroke":false,"fillOpacity":0.7}' id="reveal-highlights">
+    <area class="reveal-highlights" target="_self" alt="Blog" href="laptop.html" coords="430,306,439,369,478,382,553,326,522,316,507,264" shape="poly" data-maphilight='{"fillColor":"0073e6","stroke":false,"fillOpacity":0.7}'>
+    <area class="reveal-highlights" target="_blank" alt="Olivia's Climbing Instagram" title="Olivia's Climbing Instagram" href="https://instagram.com/olivialalalala/?hl=en" coords="823,388,827,422,844,435,903,421,898,385" shape="poly" data-maphilight='{"fillColor":"0073e6","stroke":false,"fillOpacity":0.7}'>
 </map>
 
+<center><a id="reveal-highlights-link" href="/" style="font-family:'grundschrift'">explore the site (on desktop!)</a></center>
+
 <div class='center-map'>
-	<img src="images/front-page-small.png" class="map" usemap="#image-map">
+  <img src="images/front-page-small.png" class="map" usemap="#image-map">
 </div>
+
+
 
 </html>
