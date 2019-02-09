@@ -10,11 +10,19 @@
   <!-- Activate maphilight plugin -->
     <script>$(function() {
         $('.map').maphilight({});
+        // Reveal highlights on hover.
         $('#reveal-highlights-link').mouseover(function(e) {
             $('.reveal-highlights').mouseover();
         }).mouseout(function(e) {
             $('.reveal-highlights').mouseout();
         }).click(function(e) { e.preventDefault(); });
+        // Reveal highlights on click.
+        $('#reveal-highlights-link').click(function(e) {
+            e.preventDefault();
+            var data = $('.reveal-highlights').mouseout().data('maphilight') || {};
+            data.alwaysOn = !data.alwaysOn;
+            $('.reveal-highlights').data('maphilight', data).trigger('alwaysOn.maphilight');
+        });
     });</script>
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <!-- Remove Yosemite background image for the front page. -->
@@ -31,7 +39,7 @@
     <area class="reveal-highlights" target="_blank" alt="Olivia's Climbing Instagram" title="Olivia's Climbing Instagram" href="https://instagram.com/olivialalalala/?hl=en" coords="823,388,827,422,844,435,903,421,898,385" shape="poly" data-maphilight='{"fillColor":"0073e6","stroke":false,"fillOpacity":0.7}'>
 </map>
 
-<center><a id="reveal-highlights-link" href="/" style="font-family:'grundschrift'">explore the site (on desktop!)</a></center>
+<center><a id="reveal-highlights-link" href="/" style="font-family:'grundschrift'">show me how to enter!</a></center>
 
 <div class='center-map'>
   <img src="images/front-page-small.png" class="map" usemap="#image-map">
