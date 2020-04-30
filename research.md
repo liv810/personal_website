@@ -12,7 +12,7 @@ permalink: /research
 * [Minimizing State Preparations in Variational Quantum Eigensolver by Partitioning into Commuting Families](https://arxiv.org/abs/1907.13623) (2019).  
 <sup><sup>Pranav Gokhale, **Olivia Angiuli**, Yongshan Ding, Kaiwen Gui, Teague Tomesh, Martin Suchara, Margaret Martonosi, Frederic T. Chong</sup></sup>  
 <u>Summary:</u> We exploit simultaneous measurability in order to speed up a quantum algorithm VQE, which finds the lowest eigenvalue of an exponentially sized matrix, by 8-30x.  
-![](ribbon.png){:height="15px" width="15px"} <u>Awards:</u> [IBM Q Best Paper Award](https://www.ibm.com/blogs/research/2020/03/2019-ibmq-awards/).
+![](images/ribbon.png){:height="15px" width="15px"} <u>Awards:</u> [IBM Q Best Paper Award](https://www.ibm.com/blogs/research/2020/03/2019-ibmq-awards/).
 
 * [How to De-Identify Your Data](https://queue.acm.org/detail.cfm?id=2838930). Communications of the ACM (2015).  
 <sup>**Olivia Angiuli**, Joe Blitzstein, Jim Waldo</sup>  
@@ -21,7 +21,7 @@ permalink: /research
 * [Statistical Tradeoffs between Generalization and Suppression in the De-Identification of Large-Scale Data Sets](https://ieeexplore.ieee.org/abstract/document/7552278/). IEEE Computer Society Intl Conference on Computers, Software & Applications (2016).  
 <sup>**Olivia Angiuli**, Jim Waldo</sup>  
 <u>Summary:</u> We introduce improvements to two techniques used to achieve k-anonymity, generalization and suppression, that confer k-anonymity while better preserving the statistical properties of an educational data set.  
-![](ribbon.png){:height="15px" width="15px"} <u>Awards:</u> Invited keynote.
+![](images/ribbon.png){:height="15px" width="15px"} <u>Awards:</u> Invited keynote.
 
 * [Upvote Dynamics on the Quora Network](https://www.quora.com/q/quoradata/Upvote-Dynamics-on-the-Quora-Network). Joint Statistical Meeting (2016).  
 <sup>Shankar Iyer, Paula Griffin, and **Olivia Angiuli**</sup>  
