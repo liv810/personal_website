@@ -2,6 +2,7 @@
 layout: post
 title: "A graduate student's perspective on statistics"
 date: 2019-01-21 14:25:00
+url: statistics-thoughts
 ---
 
 When I’m meeting someone new, and the inevitable question is asked, “So, what do you do?”, I respond that I’m a Ph.D. student in statistics, to which the response is a majority of the time some variation of this:

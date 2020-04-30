@@ -1,10 +1,13 @@
-<!doctype html>
-<! taken from http://themes.jsonresume.org/theme/flat>
-<html>
+---
+layout: default
+title: CV
+permalink: /cv
+---
+<!---credit to http://themes.jsonresume.org/theme/flat-->
+
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-<title>Olivia Angiuli</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
 <style type="text/css">
@@ -78,15 +81,6 @@ h4 span:first-child {
 }
 .col-sm-12 + .col-sm-12 {
 	margin-top: 30px;
-}
-#header {
-	background: #f4f6f6;
-	padding: 50px 0;
-	margin-bottom: 30px;
-}
-#header h2 {
-	color: #95a5a6;
-	font-size: 24px;
 }
 #content h3 {
 	color: #f1c40f;
@@ -175,10 +169,6 @@ h4 span:first-child {
 	.strike-through span {
 		display: block;
 	}	
-	#header {
-		margin-bottom: 10px;
-		padding: 40px 0;
-	}
 	#actions {
 		display: none;
 	}
@@ -187,17 +177,6 @@ h4 span:first-child {
 	</style>
 </head>
 <body>
-<header id="header">
-<div class="container">
-<div class="row">
-<div class="col-sm-9 col-sm-push-3">
-<h1>
-<a href="/" style="color:black;">Olivia Angiuli</a>
-</h1>
-</div>
-</div>
-</div>
-</header>
 
 <div id="content" class="container">
 
@@ -471,14 +450,4 @@ Honorable Mention.
 </div>
 </section>
 
-
-<section id="interests" class="row">
-<aside class="col-sm-3">
-<h3>Interests</h3>
-</aside>
-<h4>climbing, running</h4>
-</section>
-
 </div>
-<script data-cfasync="false" src="/cdn-cgi/scripts/f2bf09f8/cloudflare-static/email-decode.min.js"></script></body>
-</html>
