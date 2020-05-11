@@ -16,4 +16,4 @@ The solution, instead, is to focus on my own healing.  To focus on _myself_ when
 
 Happy Mother’s Day, Mommy. I love you.
 
-<img src="../../../images/grieving-absence2.JPG" alt="drawing" width="200"/>
+<img src="../../../images/grieving-absence.jpg" alt="drawing" width="200"/>
