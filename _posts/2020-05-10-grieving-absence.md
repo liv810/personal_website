@@ -12,7 +12,7 @@ But for me, the grief comes from _never even having been able to know my mom ful
 
 I haven’t wanted to accept it, but the way forward in grieving is not to try to memorialize my mom.  I’ve tried this before — having friends of mine translate from Chinese some of my mom’s writings, or looking through photo albums and trying to piece together a coherent history in my head.  These stories are always going to be external to my experience, and taken from contexts that I don’t know.
 
-The solution, instead, is to focus on my own healing.  To focus on _myself_ when it is _Mom_ who lost a painful battle to cancer, and who lost her life decades too early — I’ve subconsciously rejected it for years as being too selfish.  Maybe even too cliché.  But this is what all healing is about, no matter whether the healing surrounds either an absence or a loss.  Rituals themselves help the _survivors_ of a loss cope with what is lost; and I too must focus on healing the holes that remain in me from losing the incredible person that is my mom.
+The solution, instead, is to focus on my own healing.  To focus on _myself_ when it is _Mom_ who lost a painful battle to cancer, and who lost her life decades too early — I’ve subconsciously rejected it for years as being too selfish.  Maybe even too cliché.  But this is what all healing is about, no matter whether the healing surrounds an absence or a loss.  Rituals themselves help the _survivors_ of a loss cope with what is lost; and I too must focus on healing the holes that remain in me from losing the incredible person that is my mom.
 
 Happy Mother’s Day, Mommy. I love you.
 
