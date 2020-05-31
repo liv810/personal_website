@@ -7,6 +7,9 @@ header_pages:
 # Build settings
 theme: minima
 
+include:
+  - _includes # necessary so that index.html can inherit google-analytics.html
+
 footer-links:
   github: liv810
   instagram: olivialalalala
