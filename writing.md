@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Laptop
-permalink: /laptop
+title: Writing
+permalink: /writing
 ---
 <div id="home">
   <table class="writing"><tbody>
