@@ -180,31 +180,7 @@ h4 span:first-child {
 
 <div id="content" class="container">
 
-<section id="work" class="row">
-<aside class="col-sm-3">
-<h3>Work</h3>
-</aside>
-
-<div class="col-sm-9">
-<div class="row">
-<div class="col-sm-12">
-<h4 class="strike-through">
-<span>Coinbase</span>
-<span class="date">
-05/2018 — 07/2018
-</span>
-</h4>
-<div class="position">
-Machine Learning Engineering Intern
-</div>
-<div class="summary">
-<p style="margin-bottom:.5cm;">Incorporated blockchain signals into the fraud detection model.</p>
-</div>
-</div>
-</div>
-</div>
-
-<aside class="col-sm-3"></aside>
+<section id="work" class="row"><aside class="col-sm-3"><h3>Work</h3></aside>
 
 <div class="col-sm-9">
 <div class="row">
@@ -222,7 +198,28 @@ Machine Learning Engineering Intern
 Research Scientist
 </div>
 <div class="summary">
-<p style="margin-bottom:.5cm;">Research scientist. Using data to improve decision-making on portfolio and investment teams.</p>
+<p style="margin-bottom:.5cm;">Using data to improve decision-making on portfolio and investment teams.</p>
+</div>
+</div>
+</div>
+</div>
+
+<aside class="col-sm-3"></aside>
+
+<div class="col-sm-9">
+<div class="row">
+<div class="col-sm-12">
+<h4 class="strike-through">
+<span>Coinbase</span>
+<span class="date">
+05/2018 — 07/2018
+</span>
+</h4>
+<div class="position">
+Machine Learning Engineering Intern
+</div>
+<div class="summary">
+<p style="margin-bottom:.5cm;">Incorporated blockchain signals into the fraud detection model.</p>
 </div>
 </div>
 </div>
@@ -353,6 +350,7 @@ Bachelor's
 <aside class="col-sm-3">
 <h3>Awards</h3>
 </aside>
+
 <div class="col-sm-9">
 <div class="row">
 <div class="col-sm-12">
@@ -374,10 +372,7 @@ $34,000 stipend for 3 years to support graduate work.
 
 <p style="margin-bottom:2.5cm;"></p>
 
-<section id="awards" class="row">
-<aside class="col-sm-3">
-<h3>Awards</h3>
-</aside>
+<aside class="col-sm-3"></aside>
 <div class="col-sm-9">
 <div class="row">
 <div class="col-sm-12">
@@ -418,14 +413,13 @@ Honorable Mention.
 </div>
 </div>
 </div>
-
-
 </section>
+
 <section id="publications" class="row">
 <aside class="col-sm-3">
 <h3>Publications</h3>
-
 </aside>
+
 <div class="col-sm-9">
 <div class="row">
 <div class="col-sm-12">
@@ -448,7 +442,6 @@ Honorable Mention.
 </div>
 </div>
 
-</aside>
 <div class="col-sm-9">
 <div class="row">
 <div class="col-sm-12">
