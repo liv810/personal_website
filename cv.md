@@ -206,6 +206,30 @@ Machine Learning Engineering Intern
 
 <aside class="col-sm-3"></aside>
 
+<div class="col-sm-9">
+<div class="row">
+<div class="col-sm-12">
+<h4 class="strike-through">
+<span>SignalFire</span>
+<span class="date">
+05/2020 — Present
+</span>
+</h4>
+<div class="website pull-right">
+<a href="https://www.signalfire.com/">https://www.signalfire.com/</a>
+</div>
+<div class="position">
+Research Scientist
+</div>
+<div class="summary">
+<p style="margin-bottom:.5cm;">Research scientist. Using data to improve decision-making on portfolio and investment teams.</p>
+</div>
+</div>
+</div>
+</div>
+
+<aside class="col-sm-3"></aside>
+
 
 <div class="col-sm-9">
 <div class="row">
@@ -350,6 +374,31 @@ $34,000 stipend for 3 years to support graduate work.
 
 <p style="margin-bottom:2.5cm;"></p>
 
+<section id="awards" class="row">
+<aside class="col-sm-3">
+<h3>Awards</h3>
+</aside>
+<div class="col-sm-9">
+<div class="row">
+<div class="col-sm-12">
+<h4 class="strike-through">
+<span>Elizabeth Scott Memorial Award</span>
+</h4>
+<div class="date pull-right">
+<em>Awarded</em>
+05/2020
+</div>
+<div class="awarder">
+</div>
+ <div class="summary">
+ Given to M.A. student in Statistics Department showing the greatest promise in statistical research.
+</div>
+</div>
+</div>
+</div>
+
+<p style="margin-bottom:2.5cm;"></p>
+
 <aside class="col-sm-3"></aside>
 <div class="col-sm-9">
 <div class="row">
@@ -375,6 +424,30 @@ Honorable Mention.
 <section id="publications" class="row">
 <aside class="col-sm-3">
 <h3>Publications</h3>
+
+</aside>
+<div class="col-sm-9">
+<div class="row">
+<div class="col-sm-12">
+<h4 class="strike-through">
+<span> Minimizing State Preparations in Variational Quantum Eigensolver by Partitioning into Commuting Families </span>
+<span class="date">
+2019-06-31
+</span>
+</h4>
+<div class="website pull-right">
+<a href="https://arxiv.org/abs/1907.13623"></a>
+</div>
+<div class="publisher">
+<strong>arXiv</strong>
+</div>
+<div class="summary">
+<p style="margin-bottom:.5cm;">Authors: Pranav Gokhale, Olivia Angiuli, Yongshan Ding, Kaiwen Gui, Teague Tomesh, Martin Suchara, Margaret Martonosi, Frederic T. Chong.</p>
+</div>
+</div>
+</div>
+</div>
+
 </aside>
 <div class="col-sm-9">
 <div class="row">
