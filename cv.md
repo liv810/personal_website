@@ -307,14 +307,14 @@ Data Scientist Intern
 <h4 class="strike-through">
 <span>University of California, Berkeley</span>
 <span class="date">
-08/2017 - Present
+08/2017 - 05/2020
 </span>
 </h4>
 <div class="area">
 Statistics
 </div>
 <div class="studyType">
-Ph.D.
+Ph.D. (partially completed)
 </div>
 </div>
 </div>
@@ -370,7 +370,7 @@ $34,000 stipend for 3 years to support graduate work.
 </div>
 </div>
 
-<p style="margin-bottom:2.5cm;"></p>
+<p style="margin-bottom:2.25cm;"></p>
 
 <aside class="col-sm-3"></aside>
 <div class="col-sm-9">
@@ -392,7 +392,7 @@ $34,000 stipend for 3 years to support graduate work.
 </div>
 </div>
 
-<p style="margin-bottom:2.5cm;"></p>
+<p style="margin-bottom:5cm;"></p>
 
 <aside class="col-sm-3"></aside>
 <div class="col-sm-9">
@@ -420,15 +420,15 @@ Honorable Mention.
 <h3>Publications</h3>
 </aside>
 
+<aside class="col-sm-3"> </aside>
 <div class="col-sm-9">
 <div class="row">
 <div class="col-sm-12">
 <h4 class="strike-through">
-<span> Minimizing State Preparations in Variational Quantum Eigensolver by Partitioning into Commuting Families </span>
-<span class="date">
-2019-06-31
-</span>
+<span> Minimizing State Preparations in Variational <br> Quantum Eigensolver by Partitioning into Commuting Families </span>
+<span class="date">2019-06-31</span>
 </h4>
+<br><br>
 <div class="website pull-right">
 <a href="https://arxiv.org/abs/1907.13623"></a>
 </div>
@@ -442,6 +442,7 @@ Honorable Mention.
 </div>
 </div>
 
+<aside class="col-sm-3"> </aside>
 <div class="col-sm-9">
 <div class="row">
 <div class="col-sm-12">
@@ -495,7 +496,7 @@ Honorable Mention.
 <div class="row">
 <div class="col-sm-12">
 <h4 class="strike-through">
-<span> Elite Controller CD8+ T Cells Exhibit Comparable Viral Inhibition Capacity but Better Sustained Effector Properties Compared to Chronic Progressors </span>
+<span> Elite Controller CD8+ T Cells Exhibit Comparable <br> Viral Inhibition Capacity but Better Sustained Effector Properties Compared to Chronic Progressors </span>
 <span class="date">
 2016-07-12
 </span>
